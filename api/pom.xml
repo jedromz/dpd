@@ -62,10 +62,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
-                <configuration>
-                    <mainClass>com.dpdgroup.api.OrderProcessorApplication</mainClass>
-                    <layout>JAR</layout>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -73,6 +69,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <mainClass>com.dpdgroup.api.OrderProcessorApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
